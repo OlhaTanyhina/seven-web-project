@@ -1,6 +1,6 @@
 $(document).ready(function(){
     /* Fixed Header */
-    var header = $("#header"),
+    let header = $("#header"),
         introH = $("#intro").innerHeight(),
         scrollOffset = $(window).scrollTop();
 
@@ -27,7 +27,7 @@ $(document).ready(function(){
 
         event.preventDefault();
 
-        var blockId = $(this).data('scroll'),
+        let blockId = $(this).data('scroll'),
             headerH = $("#header").innerHeight();
             blockOffset = $(blockId).offset().top - headerH;
             
@@ -128,7 +128,7 @@ $(document).ready(function(){
     checkBtns();
 
     /*Slider Clients*/
-    var counter = 0;
+    let counter = 0;
     setInterval(function() {
         
         
@@ -144,7 +144,7 @@ $(document).ready(function(){
 
     const slides = $('.slider__track--clients');
 
-    var sectionIndex = 0;
+    let sectionIndex = 0;
 
     const controls = $('.manual-btn');
 
